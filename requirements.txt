@@ -5,3 +5,4 @@ pygeoip==0.3.2
 PySocks==1.6.8
 redis==2.10.6
 requests==2.18.4
+configparser==3.7.1

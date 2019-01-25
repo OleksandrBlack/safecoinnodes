@@ -4,7 +4,7 @@
 logfile = log/seeder.f1ede28f.log
 
 # Default/fallback port number
-port = 8333
+port = 8770
 
 # Redis database number
 db = 0

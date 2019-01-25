@@ -151,21 +151,21 @@ from cStringIO import StringIO
 from io import SEEK_CUR
 from operator import itemgetter
 
-MAGIC_NUMBER = "\xF9\xBE\xB4\xD9"
-PORT = 8333
-MIN_PROTOCOL_VERSION = 70001
-PROTOCOL_VERSION = 70015
+MAGIC_NUMBER = "\xF1\xED\xE2\x8F"
+PORT = 8770
+MIN_PROTOCOL_VERSION = 170020
+PROTOCOL_VERSION = 170020
 FROM_SERVICES = 0
 TO_SERVICES = 1  # NODE_NETWORK
-USER_AGENT = "/bitnodes.earn.com:0.1/"
-HEIGHT = 478000
+USER_AGENT = "/safecoinnodes:1.0/"
+HEIGHT = 489000
 RELAY = 0  # set to 1 to receive all txs
 
 SOCKET_BUFSIZE = 8192
 SOCKET_TIMEOUT = 30
 HEADER_LEN = 24
 
-ONION_PREFIX = "\xFD\x87\xD8\x7E\xEB\x43"  # ipv6 prefix for .onion address
+#ONION_PREFIX = "\xFD\x87\xD8\x7E\xEB\x43"  # ipv6 prefix for .onion address
 
 
 class ProtocolError(Exception):
