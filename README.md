@@ -1,9 +1,9 @@
-# CASHNODES Crawler
+# SAFECOINNODES Crawler
 
 
-Cashnodes is currently being developed to estimate the size of the Bitcoin network by finding all the reachable nodes in the network. The current methodology involves sending [getaddr](https://en.bitcoin.it/wiki/Protocol_specification#getaddr) messages recursively to find all the reachable nodes in the network, starting from a set of seed nodes. Cashodes uses Bitcoin protocol version 70015 (i.e. >= Bitcoin ABC, Bitcoin XT and BUcash). Since Bitcoin Cash network use a different set of network magic bits we are certain to avoid inclusion of Bitcoin legacy nodes in the collected data.
+Safecoinnodes is currently being developed to estimate the size of the Bitcoin network by finding all the reachable nodes in the network. The current methodology involves sending [getaddr](https://en.bitcoin.it/wiki/Protocol_specification#getaddr) messages recursively to find all the reachable nodes in the network, starting from a set of seed nodes. Cashodes uses Bitcoin protocol version 70015 (i.e. >= Bitcoin ABC, Bitcoin XT and BUcash). Since Bitcoin Cash network use a different set of network magic bits we are certain to avoid inclusion of Bitcoin legacy nodes in the collected data.
 
-Currently set of [API](https://github.com/BitcoinUnlimited/cashnodes-api) and is currently providing
+Currently set of [API](https://github.com/Fair-Exchange/safecoinnodes-api) and is currently providing
 
     GET /snapshots
     GET /snapshots/:timestamp
@@ -13,4 +13,4 @@ To deploy an instance of the crawler please have a look at the step necessary to
 
 Both aforementioned documentations are tailored for bitnodes.earn.com code base, we are going to provide a Cash version of those wiki pages as soon as things settled. 
 
-If you wish to access the data, e.g. list of network snapshots, collected using this project, see the initial set of [APIs](https://github.com/BitcoinUnlimited/cashnodes-api)i we are currently developing.
+If you wish to access the data, e.g. list of network snapshots, collected using this project, see the initial set of [APIs](https://github.com/Fair-Exchange/safecoinnodes-api)i we are currently developing.

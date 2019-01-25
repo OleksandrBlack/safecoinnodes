@@ -1,7 +1,7 @@
 [seeder]
 
 # Logfile
-logfile = log/seeder.e3e1f3e8.log
+logfile = log/seeder.f1ede28f.log
 
 # Default/fallback port number
 port = 8333
@@ -13,13 +13,13 @@ db = 0
 debug = False
 
 # Relative path to directory containing timestamp-prefixed JSON export files
-export_dir = data/export/e3e1f3e8
+export_dir = data/export/f1ede28f
 
 # Minimum age for exported nodes
 min_age = 28800
 
 # Relative path to DNS zone file containing exported nodes in A/AAAA records
-zone_file = data/zone/seed.bitnodes.io.zone
+zone_file = data/zone/safecoinnodes.zone
 
 # Initial template for DNS zone file
 template = zone.tmpl

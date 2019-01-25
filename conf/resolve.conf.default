@@ -1,10 +1,10 @@
 [resolve]
 
 # Logfile
-logfile = log/resolve.e3e1f3e8.log
+logfile = log/resolve.f1ede28f.log
 
 # Network magic number
-magic_number = e3e1f3e8
+magic_number = f1ede28f
 
 # Redis database number
 db = 0

@@ -1,17 +1,17 @@
 #!/bin/bash
-# --- bitcoin cash mainnet: e3e1f3e8 (db = 0) ---
-python -u crawl.py conf/crawl.e3e1f3e8.conf master > log/crawl.e3e1f3e8.master.out 2>&1 &
-python -u crawl.py conf/crawl.e3e1f3e8.conf slave > log/crawl.e3e1f3e8.slave.1.out 2>&1 &
-python -u crawl.py conf/crawl.e3e1f3e8.conf slave > log/crawl.e3e1f3e8.slave.2.out 2>&1 &
+# --- safecoin mainnet: f1ede28f (db = 0) ---
+python -u crawl.py conf/crawl.f1ede28f.conf master > log/crawl.f1ede28f.master.out 2>&1 &
+python -u crawl.py conf/crawl.f1ede28f.conf slave > log/crawl.f1ede28f.slave.1.out 2>&1 &
+python -u crawl.py conf/crawl.f1ede28f.conf slave > log/crawl.f1ede28f.slave.2.out 2>&1 &
 
-python -u ping.py conf/ping.e3e1f3e8.conf master > log/ping.e3e1f3e8.master.out 2>&1 &
-python -u ping.py conf/ping.e3e1f3e8.conf slave > log/ping.e3e1f3e8.slave.1.out 2>&1 &
-python -u ping.py conf/ping.e3e1f3e8.conf slave > log/ping.e3e1f3e8.slave.2.out 2>&1 &
-python -u ping.py conf/ping.e3e1f3e8.conf slave > log/ping.e3e1f3e8.slave.3.out 2>&1 &
-python -u ping.py conf/ping.e3e1f3e8.conf slave > log/ping.e3e1f3e8.slave.4.out 2>&1 &
+python -u ping.py conf/ping.f1ede28f.conf master > log/ping.f1ede28f.master.out 2>&1 &
+python -u ping.py conf/ping.f1ede28f.conf slave > log/ping.f1ede28f.slave.1.out 2>&1 &
+python -u ping.py conf/ping.f1ede28f.conf slave > log/ping.f1ede28f.slave.2.out 2>&1 &
+python -u ping.py conf/ping.f1ede28f.conf slave > log/ping.f1ede28f.slave.3.out 2>&1 &
+python -u ping.py conf/ping.f1ede28f.conf slave > log/ping.f1ede28f.slave.4.out 2>&1 &
 
-python -u resolve.py conf/resolve.e3e1f3e8.conf > log/resolve.e3e1f3e8.out 2>&1 &
+python -u resolve.py conf/resolve.f1ede28f.conf > log/resolve.f1ede28f.out 2>&1 &
 
-python -u export.py conf/export.e3e1f3e8.conf > log/export.e3e1f3e8.out 2>&1 &
+python -u export.py conf/export.f1ede28f.conf > log/export.f1ede28f.out 2>&1 &
 
-python -u seeder.py conf/seeder.e3e1f3e8.conf > log/seeder.e3e1f3e8.out 2>&1 &
+python -u seeder.py conf/seeder.f1ede28f.conf > log/seeder.f1ede28f.out 2>&1 &

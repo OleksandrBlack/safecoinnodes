@@ -1,10 +1,10 @@
 [ping]
 
 # Logfile
-logfile = log/ping.e3e1f3e8.log
+logfile = log/ping.f1ede28f.log
 
 # Network magic number
-magic_number = e3e1f3e8
+magic_number = f1ede28f
 
 # Redis database number
 db = 0
@@ -19,7 +19,7 @@ debug = False
 source_address = 0.0.0.0
 
 # Protocol version to use for outgoing version message
-protocol_version = 70015
+protocol_version = 170020
 
 # User agent (BIP 0014) to use for outgoing version message
 # -----------------------------------------------------------------------------
@@ -28,7 +28,7 @@ protocol_version = 70015
 # crawler. This is so that users will not confuse your crawler with another
 # instance that is already running and generating data for the project.
 # -----------------------------------------------------------------------------
-user_agent = /bitnodes.earn.com:0.1/
+user_agent = /safecoinnodes:1.0/
 
 # Services to use for outgoing network address message
 services = 0
@@ -50,10 +50,10 @@ nodes_per_ipv6_prefix = 1
 ttl = 10800
 
 # Attempt to establish connection with .onion nodes
-onion = True
+onion = False
 
 # Tor proxy is required to connect to .onion address
 tor_proxy = 127.0.0.1:9050
 
 # Relative path to directory containing timestamp-prefixed JSON crawl files
-crawl_dir = data/crawl/e3e1f3e8
+crawl_dir = data/crawl/f1ede28f
