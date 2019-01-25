@@ -4,10 +4,8 @@
 *.pyc
 .DS_Store
 /.idea/
-/.pytest_cache/
 /data/
-/internal-tests/
-/test-reports/
-geoip/*.mmdb
-geoip/*.txt
+/tests/
+clean.sh
+geoip/*.dat
 rsync.sh

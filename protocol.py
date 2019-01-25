@@ -699,9 +699,9 @@ class Serializer(object):
         version = struct.unpack("<i", header.read(4))[0]
         prev_block_hash = header.read(32)[::-1]  # BE -> LE
         merkle_root = header.read(32)[::-1]  # BE -> LE
-        timestamp = unpack("<I", header.read(4))
-        bits = unpack("<I", header.read(4))
-        nonce = unpack("<I", header.read(4))
+        timestamp = struct.unpack("<I", header.read(4))[0]
+        bits = struct.unpack("<I", header.read(4))[0]
+        nonce = struct.unpack("<I", header.read(4))[0]
         tx_count = self.deserialize_int(data)
         return {
             'block_hash': hexlify(block_hash),
@@ -955,7 +955,7 @@ class Connection(object):
 
 
 def main():
-    to_addr = ("88.99.167.175", PORT)
+    to_addr = ("136.243.139.96", PORT)
     to_services = TO_SERVICES
 
     handshake_msgs = []
