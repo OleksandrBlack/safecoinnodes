@@ -71,9 +71,6 @@ def get_row(node):
     return node + height + hostname + geoip
 
 
-MAX_DUMPED_SNAPSHOTS = 500
-
-
 def export_nodes(nodes, timestamp):
     """
     Merges enumerated data for the specified nodes and exports them into
@@ -90,8 +87,6 @@ def export_nodes(nodes, timestamp):
 
     dump = os.path.join(CONF['export_dir'], "{}.json".format(timestamp))
     open(dump, 'w').write(json.dumps(rows, encoding="latin-1"))
-    REDIS_CONN.lpush('dumped_snapshots', timestamp)
-    REDIS_CONN.ltrim('dumped_snapshots', 0, MAX_DUMPED_SNAPSHOTS)
     logging.info("Wrote %s", dump)
 
 
